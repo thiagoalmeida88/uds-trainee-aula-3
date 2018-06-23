@@ -14,8 +14,8 @@ public class PersonagemController {
 
     @PostMapping
     public ResponseEntity criar(@RequestBody Ryu ryu){
-        // salvar Ryu
-        return new ResponseEntity("Parabéns man! It's great!!!", HttpStatus.CREATED);
+
+        return new ResponseEntity(ryu.toString(), HttpStatus.CREATED);
 
     }
 
